@@ -117,7 +117,7 @@ layout = html.Div(
                             html.Label("Price Timeseries:", className="input_label"),
                             dcc.Dropdown(
                                 id="price-timeseries",
-                                options=[{"label": "Default", "value": "default"},{"label": "10% Higher Volatility", "value": "default"}],
+                                options=[{"label": "Default", "value": "default"}],
                                 value="default",
                                 className="dropdown_field",
                                 style={"width": "100%"}
