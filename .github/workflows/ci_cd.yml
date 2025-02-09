@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 env:
-  REGISTRY: "registry.digitalocean.com/wiwa1978-registry-wim"
-  IMAGE_NAME: "flask-app-wim"
+  REGISTRY: "registry.digitalocean.com/zenobe"
+  IMAGE_NAME: "zenobe-dashboard"
 
 jobs:
   test:
