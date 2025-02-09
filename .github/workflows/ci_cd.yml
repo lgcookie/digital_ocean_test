@@ -10,7 +10,6 @@ env:
   IMAGE_NAME: "flask-app-wim"
 
 jobs:
-  jobs:
   test:
     runs-on: ubuntu-latest
     steps:
