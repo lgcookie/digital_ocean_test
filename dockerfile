@@ -3,7 +3,8 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy only the necessary files
-COPY pyproject.toml poetry.lock ./
+COPY pyproject.toml ./
+COPY app.py ./
 COPY dashboard/ ./dashboard/
 COPY optimisation/ ./optimisation/
 
@@ -22,4 +23,4 @@ RUN poetry install --no-root
 EXPOSE 8050
 
 # Command to run the application
-CMD ["poetry", "run", "python", "-m", "dashboard"]
+CMD ["poetry", "run", "python", "app.py"]
