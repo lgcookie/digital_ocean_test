@@ -1,0 +1,1 @@
+{"simulation_name": "Simulation Example", "power_capacity": 100, "energy_capacity": 100, "charging_efficiency": 85, "discharging_efficiency": 85, "max_daily_cycles": 2, "price_file": "default", "timestamp": "20250209_114855"}

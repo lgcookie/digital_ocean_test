@@ -1,0 +1,196 @@
+
+
+.input_label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.input_field {
+  margin-bottom: 10px;
+}
+
+.button-primary {
+  background-color: #ff8400;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background-color: #d40434;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.page-container {
+  overflow: hidden;
+  padding-top: 70px; /* Account for fixed header */
+}
+:root {
+  --background-primary: #FFFFFF;
+  --background-secondary: #E9ECEF;
+  --text-primary: #2E2E2E;
+}
+
+[data-theme="dark"] {
+  --background-primary: #1A1B1E;
+  --background-secondary: #2C2E33;
+  --text-primary: #FFFFFF;
+}
+.main-content-area {
+  width: 75%;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--background-primary);
+}
+
+.page-container {
+  overflow: hidden;
+  padding-top: 70px; /* Account for fixed header */
+  background-color: var(--background-primary);
+}
+/* Default (Light) Theme Text Colors */
+.page-container {
+  color: var(--text-primary);
+}
+
+.input_label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: var(--text-primary);  /* Changed from #ffffff */
+}
+
+/* Theme-specific text colors */
+[data-theme="light"] {
+  --text-primary: #2E2E2E;
+}
+
+[data-theme="light"] .input_label,
+[data-theme="light"] h4,
+[data-theme="light"] h6,
+[data-theme="light"] p,
+[data-theme="light"] label {
+  color: #2E2E2E;
+}
+
+[data-theme="dark"] {
+  --text-primary: #FFFFFF;
+}
+
+[data-theme="dark"] .input_label,
+[data-theme="dark"] h4,
+[data-theme="dark"] h6,
+[data-theme="dark"] p,
+[data-theme="dark"] label {
+  color: #FFFFFF;
+}
+
+/* Keep button text colors consistent */
+.button-primary,
+.button-secondary {
+  color: white;  /* Buttons always have white text */
+}
+
+.sidebar-container {
+  width: 25%;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+.main-content-container {
+  width: 75%;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .sidebar-container {
+  border-right: 1px solid var(--background-primary);
+}
+
+[data-theme="light"] .sidebar-container {
+  border-right: 1px solid var(--background-secondary);
+}
+
+/* Header Styles */
+.header-container {
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--background-secondary);
+  color: var(--text-primary);
+}
+
+/* Navigation Links */
+.nav-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: var(--background-secondary);
+}
+
+/* Theme Toggle */
+.theme-text {
+  color: var(--text-primary);
+}
+
+.theme-switch {
+  margin-left: 10px;
+}
+
+/* Dark Theme Specific */
+[data-theme="dark"] .header-container {
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--background-secondary);
+}
+
+[data-theme="dark"] .nav-link {
+  color: var(--text-primary);
+}
+
+/* Light Theme Specific */
+[data-theme="light"] .header-container {
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--background-secondary);
+}
+
+[data-theme="light"] .nav-link {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .header-container {
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--background-secondary);
+}
+
+[data-theme="light"] .header-container {
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--background-secondary);
+}
+
+/* Ensure dropdown text is always black */
+.dropdown_field .Select-value-label,
+.dropdown_field .Select-menu-outer {
+  color: #2E2E2E !important;
+}
+
+/* Style dropdown options */
+.Select-menu-outer .Select-option {
+  color: #2E2E2E !important;
+}
